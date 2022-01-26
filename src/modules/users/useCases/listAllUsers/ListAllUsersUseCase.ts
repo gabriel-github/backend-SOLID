@@ -17,7 +17,7 @@ class ListAllUsersUseCase {
     }
 
     if (!user.admin) {
-      throw new Error(`User ${user.name} is not admin`);
+      throw new Error(`User is not admin`);
     }
 
     return allUsers;
